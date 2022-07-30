@@ -1,87 +1,38 @@
-# Project Title
+# Assignment 5
 
-The Assignment 5 deals with creating a repository file with adding a python file used from the previous assignment and explaining the assignment on a readme file in detail.
+The Assignment 5 deals with creating a repository file with adding a python file used from the previous assignment and explaining the python file on a readme.md in detail.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+We created a Repository at Github by the name Data1202. Where the repository is a public repository with a README.MD. After creating the repository we added a python file which reads "CO2 Emission_canada.csv" file. 
 
-### Prerequisites
+### Loading Library
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+We installed pandas library in the python file.
 
 ```
-Give the example
+Import pandas as pd
 ```
 
-And repeat
+### Load Dataset
+
+After loading the pandas library we loaded the dataset i.e. "CO2 Emission_Canada.csv". The dataset includes the CO2 emission of automobiles in canada. 
+
+By using the following command
 
 ```
-until finished
+dataset = pd.read_csv('CO2-Emissions_Canada.csv')
+dataset.head()
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+Using describe code for the statistical analysis of the dataset.
 
 ```
-Give an example
+dataset.describe()
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+Using the above code we get statistical analysis of the dataset which includes information like count, mean, std(standard deviation), max, min, etc.
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* **Aman Sharma**
